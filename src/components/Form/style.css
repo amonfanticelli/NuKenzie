@@ -1,0 +1,99 @@
+.formNuKenzie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 22.813rem;
+  height: 21.938rem;
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid #e9ecef;
+  border-radius: 4px;
+  padding-top: 2.375rem;
+  padding-bottom: 2.375rem;
+  margin-left: 3.625rem;
+}
+
+.formNuKenzie .labelDescription {
+  align-self: start;
+  margin-left: 1.7rem;
+  margin-bottom: 0.75rem;
+}
+
+.formNuKenzie .inputDescription {
+  box-sizing: border-box;
+  width: 19.625rem;
+  height: 3.25rem;
+  background: #f8f9fa;
+  border: 2px solid #f8f9fa;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 16px;
+  gap: 10px;
+  margin-bottom: 2.625rem;
+}
+.formNuKenzie .containerValueSelect {
+  display: flex;
+  height: 60%;
+}
+
+.containerOnlyValue {
+  margin-right: 2.25rem;
+}
+
+.containerSelect {
+  /* border: 1px solid green; */
+}
+
+.containerValueSelect .inputValue {
+  width: 8rem;
+  height: 3rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 16px;
+  gap: 10px;
+  background: #f8f9fa;
+  border: 2px solid #f8f9fa;
+  border-radius: 8px;
+  margin-top: 0.555rem;
+}
+
+.containerValueSelect .select {
+  width: 9rem;
+  height: 3rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 16px;
+  gap: 10px;
+  background: #f8f9fa;
+  border: 2px solid #f8f9fa;
+  border-radius: 8px;
+  margin-top: 0.555rem;
+}
+
+.containerValueSelect .option {
+  /* border: 1px solid pink; */
+}
+
+.formNuKenzie .buttonForm {
+  width: 19.625rem;
+  height: 3rem;
+  background: #fd377e;
+  border: 2px solid #fd377e;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.2rem;
+
+  color: #ffffff;
+}

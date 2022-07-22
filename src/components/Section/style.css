@@ -1,0 +1,12 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+  width: 40%;
+  margin-left: 1rem;
+}
+.section .containerH2Button {
+  border: 1px solid blue;
+  display: flex;
+  justify-content: space-between;
+}
