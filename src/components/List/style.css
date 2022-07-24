@@ -1,0 +1,89 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  list-style: none;
+  padding: 0;
+}
+
+.list .listElement {
+  display: flex;
+  height: 5.438rem;
+  width: 100%;
+  background: #f8f9fa;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+}
+
+.listElement .coloredBarGreen {
+  height: 5.438rem;
+  width: 0.25rem;
+  background: #03b898;
+  margin-right: 0.875rem;
+  border-radius: 4px 0px 0px 4px;
+}
+
+.listElement .coloredBarGrey {
+  height: 5.438rem;
+  width: 0.25rem;
+  margin-right: 0.875rem;
+  background: #e9ecef;
+  border-radius: 4px 0px 0px 4px;
+}
+.listElement .containerH2Span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 60%;
+  height: 5rem;
+}
+
+.containerH2Span .titleDescription {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 2rem;
+  color: #212529;
+  margin: 0;
+}
+
+.containerH2Span .spanEntry {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.375rem;
+  color: #343a40;
+}
+
+.containerSpanButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 40%;
+  height: 70%;
+}
+
+.containerSpanButton .spanPrice {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.375rem;
+  color: #212529;
+}
+
+.containerSpanButton .buttonRemove {
+  cursor: pointer;
+  width: 22px;
+  height: 22px;
+  background: #e9ecef;
+  border-radius: 2.46154px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  border: none;
+  margin-right: 1rem;
+}

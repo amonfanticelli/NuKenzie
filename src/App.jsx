@@ -7,18 +7,40 @@ import Section from "./components/Section";
 import List from "./components/List";
 
 function App() {
+  const [backup, setBackup] = useState([]);
   const [listTransactions, setListTransactions] = useState([
-    { description: "Salário recebido", type: "entrada", value: 2500 },
-    { description: "Conta de luz", type: "saída", value: -150 },
+    // {
+    //   id: crypto.randomUUID(),
+    //   description: "Salário recebido",
+    //   type: "entrada",
+    //   value: 2500,
+    // },
+    // {
+    //   id: crypto.randomUUID(),
+    //   description: "Conta de luz",
+    //   type: "saída",
+    //   value: -150,
+    // },
   ]);
+  const [total, setTotal] = useState(0);
 
   return (
     <div className="App">
       <Header />
       <Main>
-        <Form />
-        <Section>
-          <List></List>
+        <Form
+          setListTransactions={setListTransactions}
+          listTransactions={listTransactions}
+          setTotal={setTotal}
+          total={total}
+          setBackup={setBackup}
+        />
+        <Section
+          setListTransactions={setListTransactions}
+          listTransactions={listTransactions}
+          backup={backup}
+        >
+          <List listTransactions={listTransactions} />
         </Section>
       </Main>
     </div>

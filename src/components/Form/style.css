@@ -1,8 +1,21 @@
+.containerForm {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+@media screen and (max-width: 1000px) {
+  .containerForm {
+    width: 90%;
+    margin: 0px;
+  }
+}
+
 .formNuKenzie {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 22.813rem;
+  width: 100%;
   height: 21.938rem;
   box-sizing: border-box;
   background: #ffffff;
@@ -10,19 +23,20 @@
   border-radius: 4px;
   padding-top: 2.375rem;
   padding-bottom: 2.375rem;
-  margin-left: 3.625rem;
+  /* margin-left: 3.625rem; */
+  margin-bottom: 1rem;
 }
 
 .formNuKenzie .labelDescription {
-  align-self: start;
-  margin-left: 1.7rem;
-  margin-bottom: 0.75rem;
+  width: 80%;
+  display: flex;
+  align-items: flex-start;
 }
 
 .formNuKenzie .inputDescription {
   box-sizing: border-box;
-  width: 19.625rem;
-  height: 3.25rem;
+  width: 82%;
+  height: 20%;
   background: #f8f9fa;
   border: 2px solid #f8f9fa;
   border-radius: 8px;
@@ -36,55 +50,50 @@
 .formNuKenzie .containerValueSelect {
   display: flex;
   height: 60%;
+  width: 80%;
+  /* justify-content: space-between; */
 }
 
 .containerOnlyValue {
-  margin-right: 2.25rem;
+  width: 50%;
 }
 
 .containerSelect {
-  /* border: 1px solid green; */
+  width: 50%;
 }
 
 .containerValueSelect .inputValue {
-  width: 8rem;
-  height: 3rem;
+  width: 50%;
+  height: 40%;
   box-sizing: border-box;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px 16px;
-  gap: 10px;
   background: #f8f9fa;
+  margin: 0;
+
   border: 2px solid #f8f9fa;
   border-radius: 8px;
   margin-top: 0.555rem;
 }
 
 .containerValueSelect .select {
-  width: 9rem;
-  height: 3rem;
+  width: 100%;
+  height: 40%;
   box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px 16px;
-  gap: 10px;
   background: #f8f9fa;
   border: 2px solid #f8f9fa;
   border-radius: 8px;
   margin-top: 0.555rem;
 }
 
-.containerValueSelect .option {
-  /* border: 1px solid pink; */
+.labelValueType {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
 
 .formNuKenzie .buttonForm {
-  width: 19.625rem;
-  height: 3rem;
+  width: 80%;
+  height: 16%;
   background: #fd377e;
   border: 2px solid #fd377e;
   border-radius: 8px;
@@ -96,4 +105,59 @@
   line-height: 1.2rem;
 
   color: #ffffff;
+}
+
+.sectionPrice {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 100%;
+  height: 12%;
+  background: #ffffff;
+  border: 1px solid #e9ecef;
+  border-radius: 4px;
+  padding-top: 1.25rem;
+  /* padding-left: 1.5rem;
+  padding-right: 1.5rem; */
+  padding-bottom: 1.125rem;
+}
+.sectionPrice .containerH2Paragraph {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 2rem;
+}
+
+.containerH2Paragraph .totalValue {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 2rem;
+  color: #212529;
+  margin-left: 1rem;
+}
+.containerParagrap .paragraph {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.375rem;
+  color: #343a40;
+  margin-left: 1rem;
+  width: 80%;
+}
+
+.containerH2Paragraph .spanPrice {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 2rem;
+  display: flex;
+  align-items: center;
+  color: #fd377e;
+  margin-right: 1rem;
 }
