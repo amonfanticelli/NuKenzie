@@ -40,7 +40,10 @@ function App() {
           listTransactions={listTransactions}
           backup={backup}
         >
-          <List listTransactions={listTransactions} />
+          <List
+            listTransactions={listTransactions}
+            setListTransactions={setListTransactions}
+          />
         </Section>
       </Main>
     </div>

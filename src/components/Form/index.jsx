@@ -86,21 +86,24 @@ const Form = ({
           Inserir Valor
         </button>
       </form>
-
-      <section className="sectionPrice">
-        <div className="containerH2Paragraph">
-          <h2 className="totalValue">Valor Total:</h2>
-          <span className="spanPrice">
-            {new Intl.NumberFormat("pt-BR", {
-              style: "currency",
-              currency: "BRL",
-            }).format(total)}
-          </span>
-        </div>
-        <div className="containerParagraph">
-          <p className="paragraph">O valor se refere ao saldo</p>
-        </div>
-      </section>
+      {!listTransactions.length ? (
+        <></>
+      ) : (
+        <section className="sectionPrice">
+          <div className="containerH2Paragraph">
+            <h2 className="totalValue">Valor Total:</h2>
+            <span className="spanPrice">
+              {new Intl.NumberFormat("pt-BR", {
+                style: "currency",
+                currency: "BRL",
+              }).format(total)}
+            </span>
+          </div>
+          <div className="containerParagraph">
+            <p className="paragraph">O valor se refere ao saldo</p>
+          </div>
+        </section>
+      )}
     </div>
   );
 };

@@ -3,6 +3,12 @@ import "./style.css";
 import { FiTrash2 } from "react-icons/fi";
 
 const List = ({ listTransactions, setListTransactions }) => {
+  const handleRemoveItem = (id) => {
+    const newList = listTransactions.filter((item) => item.id !== id);
+    console.log({ listTransactions, newList });
+    setListTransactions(newList);
+  };
+
   return listTransactions.length === 0 ? (
     <img src={imgNoContent} alt="" />
   ) : (
@@ -28,12 +34,7 @@ const List = ({ listTransactions, setListTransactions }) => {
               }).format(transaction.value)}
             </span>
             <button
-              onClick={() => {
-                const newList = listTransactions.filter(
-                  (item) => item.id !== transaction.id
-                );
-                setListTransactions(newList);
-              }}
+              onClick={() => handleRemoveItem(transaction.id)}
               id={transaction.id}
               className="buttonRemove"
             >
