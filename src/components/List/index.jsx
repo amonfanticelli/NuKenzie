@@ -2,11 +2,13 @@ import imgNoContent from "../../img/noLaunchs.png";
 import "./style.css";
 import { FiTrash2 } from "react-icons/fi";
 
-const List = ({ listTransactions, setListTransactions }) => {
+const List = ({ listTransactions, setListTransactions, backup, setBackup }) => {
   const handleRemoveItem = (id) => {
-    const newList = listTransactions.filter((item) => item.id !== id);
-    console.log({ listTransactions, newList });
-    setListTransactions(newList);
+    const newList = backup.filter((item) => item.id !== id);
+    const newList2 = listTransactions.filter((item) => item.id !== id);
+
+    setListTransactions(newList2);
+    setBackup(newList);
   };
 
   return listTransactions.length === 0 ? (

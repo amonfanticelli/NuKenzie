@@ -43,6 +43,8 @@ function App() {
           <List
             listTransactions={listTransactions}
             setListTransactions={setListTransactions}
+            backup={backup}
+            setBackup={setBackup}
           />
         </Section>
       </Main>
